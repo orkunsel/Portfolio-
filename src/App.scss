@@ -1,0 +1,599 @@
+.home{
+  background-color: #181414;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 8vh;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.395);
+
+  .navbar-left{
+    .orkun-logo{
+      max-width: 6rem;
+      
+      color: white;
+
+    }
+  }
+  
+
+  .navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    .icon{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.25rem;
+      padding: 20px;
+      font-size: 1rem;
+
+      &:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        color: #2596be;
+      }
+    }
+
+    span:hover{
+      cursor: pointer;
+    }
+
+    .contact-icon{
+      font-size: 2rem;
+    }
+
+    .projects-icon{
+      font-size: 1.5rem;
+      
+      
+    }
+
+  }
+}
+
+
+
+.mainpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  height: 92vh;
+  padding-left: 20rem;
+  padding-top: 10rem;
+  .contact-info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    width: 5vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding-top: 25rem;
+    align-items: center;
+
+      .insta-icon{
+        font-size: 1.5rem;
+        }
+      }
+
+      .insta-box{
+        display: flex; 
+        padding: 10px;
+        color: inherit;
+        &:hover{
+          background-color: rgba(249, 0, 199, 0.714);
+          border-radius: 50%;
+          transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+
+      }
+      .linkedin-icon{
+        font-size: 1.5rem;
+        }
+      }
+  
+      .linkedin-box{
+        display: flex; 
+        padding: 10px;
+        margin-top: 2rem;
+        color: inherit;
+        &:hover{
+          background-color: rgba(8, 103, 180, 0.714);
+          border-radius: 50%;
+          transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+  
+      }
+
+    
+  }
+
+  .orkun-image{
+    position: absolute;
+    max-width: 28vw;
+    border-radius: 25px;
+    margin-left: 50rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    padding-bottom: 10rem;
+
+  }
+
+  .portrait-section{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 70vh;
+    padding-top: 7rem;
+
+
+    
+    .typewriter-intro{
+      color: white;
+      font-size: 1.25rem; /* Adjust the font size for the paragraph as needed */
+      margin: 0.25rem;
+      max-width: 600px;
+    }
+  
+    .typewriter-name{
+      color: white;
+      font-size: 4rem;
+      margin: 0.5rem;
+    }
+
+    .about-section{
+      color: white;
+      display: flex;
+      margin-top: 5rem;
+
+    }
+  }
+  
+  
+
+}
+
+h1{
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+
+}
+
+.project-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+  border-top: 2px solid white;
+  min-width: 100vw;
+  padding-bottom: 50rem;
+  font-size: 1.25rem; 
+
+  .projects{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    
+
+
+    .cafe{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; 
+      align-items: center;
+      position: relative;
+      left: 0;
+      width: 30vw;
+      height: 67vh;
+      margin: 5rem auto 5rem 0;
+      margin-left: 15rem;
+      
+      font-family: "Quicksand", sans-serif;
+      font-style: normal;
+      font-optical-sizing: auto;
+      color: white;
+      
+     
+      
+      background-color: #3d2819;
+      border: 2px solid white;
+      border-radius: 20px;
+      transition: all 0.5s ease-in-out;
+      box-shadow: 0 0 3cap white;
+      
+      .name-description{
+        font-size: 1rem;
+        position: relative;
+        align-items: center;
+
+        .name-and-react{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border-radius: 20px;
+        
+          .react-icon{
+            display: flex;
+            text-align: right;
+            padding-right: 2rem;
+            border-radius: 20px;
+            padding: 0.5rem;
+            border: white 1px solid;
+            font-size: 13px;
+            background-color:#2596be;
+  
+            &:hover{
+              transform: scale(1.1);
+              transition: all 0.3s ease-in-out;
+              }
+  
+          }
+  
+          .cafe-name{
+            display: flex;
+            text-align: left;
+            padding-left: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            font-size: 3rem;
+            font-weight: 300;
+           
+          }
+        } 
+        
+        .cafe-description{
+          margin: 1.5rem;
+          font-size: 1.2rem;
+          padding-top: 50px;
+          position: relative;
+          top: 1rem;
+          font-size: 1.4rem;
+          height: 25vh;
+          background-color: #181414;
+          padding: 5px;
+          border-radius: 25px;
+          border: 1px solid white;
+          p{
+            padding-top: 20px;
+          }
+
+        
+          .cafe-icons{
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            right: 0;
+            padding: 2rem;
+            font-size: 1.3rem;
+            gap: 2rem;
+  
+            .external-icon{
+              color: white;
+  
+              :hover{
+                color:#2596be;
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+              }
+            
+            }
+  
+            .github-icon{
+              color: white;
+              :hover{
+                color: #2596be;
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+              }
+            }
+          }
+          .date{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2rem;
+            font-weight: 300;
+            font-size: 1rem;
+    
+          }
+        }  
+  
+        .horizontal-line-2{
+          width: 100%;  
+          margin: 0; 
+          height: 2px; 
+          border: none;
+          background-color: white;
+          box-shadow: 0 0 2cap white;
+        }
+   
+        
+        
+      }
+  
+      .cafe-image{
+        display: flex;
+        background-color: transparent;
+      
+        border-radius: 20px;
+        width: 30vw;
+        height: 24vh;
+        max-width: fit-content;
+        flex-shrink: 0;
+        min-width: 30vw;
+        padding: 5px;
+        padding-right: 10px;
+        box-shadow: none;
+        margin-bottom: 10rem;
+        
+      }
+      .horizontal-line{
+        margin: 0; /* Removes default margin */
+        width: 100%; /* Sets the width to cover full container */
+        height: 2px; /* Sets the height of the line */
+        border: none; /* Removes the default border */
+        background-color: white; /* Sets the color of the line */
+      }
+      
+      h1{
+        font-size: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+      
+      }
+  
+    }
+    .earthquake{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; 
+      align-items: center;
+      position: relative;
+      right: 0;
+      width: 30vw;
+      height: 67vh;
+      margin: 5rem auto 5rem 0;
+      margin-right: 15rem;
+      
+      font-family: "Quicksand", sans-serif;
+      font-style: normal;
+      font-optical-sizing: auto;
+      color: white;
+      
+      
+     
+      
+      background-color: rgba(121, 73, 15, 0.807);
+      border: 2px solid white;
+      border-radius: 20px;
+      transition: all 0.5s ease-in-out;
+      box-shadow: 0 0 3cap white;
+      
+      .name-description{
+        font-size: 1rem;
+        position: relative;
+        align-items: center;
+
+        .name-and-react{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border-radius: 20px;
+        
+          .react-icon{
+            display: flex;
+            text-align: right;
+            padding-right: 2rem;
+            border-radius: 20px;
+            padding: 0.5rem;
+            border: white 1px solid;
+            font-size: 13px;
+            background-color:#2596be;
+  
+            &:hover{
+              transform: scale(1.1);
+              transition: all 0.3s ease-in-out;
+              }
+  
+          }
+  
+          .proj-name{
+            display: flex;
+            text-align: left;
+            padding-left: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+           
+          }
+        } 
+        
+        .proj-description{
+          margin: 1.5rem;
+          font-size: 1.2rem;
+          padding-top: 50px;
+          position: relative;
+          top: 1rem;
+          font-size: 1.4rem;
+          height: 25vh;
+          background-color: #181414;
+          padding: 5px;
+          border-radius: 25px;
+          border: 1px solid white;
+          p{
+            padding-top: 20px;
+          }
+
+        
+          .proj-icons{
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            right: 0;
+            padding: 2rem;
+            font-size: 1.3rem;
+            gap: 2rem;
+  
+            .external-icon{
+              color: white;
+  
+              :hover{
+                color:#2596be;
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+              }
+            
+            }
+  
+            .github-icon{
+              color: white;
+              :hover{
+                color: #2596be;
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+              }
+            }
+          }
+          .date{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 2rem;
+            font-weight: 300;
+            font-size: 1rem;
+    
+          }
+        }  
+  
+        .horizontal-line-2{
+          width: 100%;  
+          margin: 0; 
+          height: 2px; 
+          border: none;
+          background-color: white;
+          box-shadow: 0 0 2cap white;
+        }
+        
+        
+        h1{
+          font-size: 4rem;
+          margin-top: 4rem;
+          margin-bottom: 3rem;
+        
+        }
+   
+        
+        
+      }
+  
+      .cafe-image{
+        display: flex;
+        background-color: transparent;
+      
+        border-radius: 20px;
+        width: 30vw;
+        height: 24vh;
+        max-width: fit-content;
+        flex-shrink: 0;
+        min-width: 30vw;
+        padding: 5px;
+        padding-right: 10px;
+        box-shadow: none;
+        margin-bottom: 10rem;
+        
+      }
+  
+    }
+   
+
+
+  }
+
+
+  
+}
+
+.footer{
+  display: flex;
+  color: white;
+  width: 100vw;
+  height: 8vh;
+  background-color: black;
+
+  .footer-left{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 10rem;
+    gap: 2rem;
+    font-size: 1.3rem;
+
+    .footer-insta{
+      display: flex; 
+      padding: 7px;
+      color: inherit;
+      &:hover{
+        background-color: rgba(249, 0, 199, 0.714);
+        border-radius: 50%;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    .footer-linkedin{
+      display: flex; 
+      padding: 7px;
+      color: inherit;
+      &:hover{
+        background-color: rgba(8, 103, 180, 0.714);
+        border-radius: 50%;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .footer-mail{
+      display: flex; 
+      padding: 7px;
+      color: inherit;
+      &:hover{
+        background-color: red;
+        border-radius: 50%;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+
+  }
+
+}
