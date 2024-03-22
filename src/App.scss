@@ -2,6 +2,8 @@
   background-color: #181414;
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
+
+
 }
 
 
@@ -13,7 +15,8 @@
   height: 8vh;
   align-items: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.395);
+  background-color: rgba(0, 0, 0, 1);
+
 
   .navbar-left{
     .orkun-logo{
@@ -55,6 +58,7 @@
 
     .projects-icon{
       font-size: 1.5rem;
+      padding-left: 5px;
       
       
     }
@@ -72,10 +76,11 @@
   height: 92vh;
   padding-left: 20rem;
   padding-top: 10rem;
+  
   .contact-info{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     color: white;
     width: 5vw;
     height: 100vh;
@@ -84,52 +89,72 @@
     padding-top: 25rem;
     align-items: center;
 
+      
+    .insta-box{
+      display: flex; 
+      padding: 12px;
+      color: inherit;
+      border-radius: 50%;
       .insta-icon{
         font-size: 1.5rem;
-        }
       }
 
-      .insta-box{
-        display: flex; 
-        padding: 10px;
-        color: inherit;
-        &:hover{
-          background-color: rgba(249, 0, 199, 0.714);
-          border-radius: 50%;
-          transform: scale(1.1);
-          transition: all 0.3s ease-in-out;
-
+      &:hover{
+        background-color: rgba(249, 0, 166, 0.479);
+        transform: translateX(5px) scale(1.1);
+        transition: all 0.3s ease-in-out;
       }
+   
+    }
+    .linkedin-box{
+      display: flex; 
+      padding: 12px;
+      margin-top: 2rem;
+      color: inherit;
+      border-radius: 50%;
       .linkedin-icon{
         font-size: 1.5rem;
-        }
       }
-  
-      .linkedin-box{
-        display: flex; 
-        padding: 10px;
-        margin-top: 2rem;
-        color: inherit;
-        &:hover{
-          background-color: rgba(8, 103, 180, 0.714);
-          border-radius: 50%;
-          transform: scale(1.1);
-          transition: all 0.3s ease-in-out;
-  
+      &:hover{
+        background-color: rgba(8, 103, 180, 0.714);
+        transform: translateX(5px) scale(1.1);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
       }
+    }
+
+    .mail-box{
+      display: flex; 
+      padding: 10px;
+      color: inherit;
+      border-radius: 50%;
+      margin-top: 2rem;
+      .mail-icon{
+        font-size: 1.5rem;
+      }
+      &:hover{
+        background-color: rgba(255, 0, 0, 0.595);
+        transform: translateX(5px) scale(1.1);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+      }
+    }
+    
 
     
   }
 
   .orkun-image{
     position: absolute;
-    max-width: 28vw;
-    border-radius: 25px;
-    margin-left: 50rem;
-    margin-bottom: 4rem;
     align-items: center;
-    padding-bottom: 10rem;
+    border: 1px solid white;
 
+    max-width: 30vw;
+    height: fit-content;
+    border-radius: 25px;
+
+    margin-left: 45rem;
+    margin-bottom: 10rem;
   }
 
   .portrait-section{
@@ -139,8 +164,6 @@
     height: 70vh;
     padding-top: 7rem;
 
-
-    
     .typewriter-intro{
       color: white;
       font-size: 1.25rem; /* Adjust the font size for the paragraph as needed */
@@ -184,6 +207,7 @@ h1{
   min-width: 100vw;
   padding-bottom: 50rem;
   font-size: 1.25rem; 
+  
 
   .projects{
     display: flex;
@@ -191,6 +215,8 @@ h1{
     width: 100vw;
     align-items: center;
     text-align: center;
+   
+    
     
 
 
@@ -205,11 +231,18 @@ h1{
       height: 67vh;
       margin: 5rem auto 5rem 0;
       margin-left: 15rem;
-      
+
       font-family: "Quicksand", sans-serif;
       font-style: normal;
       font-optical-sizing: auto;
       color: white;
+      z-index: 999;
+      opacity: 1;
+      &:hover{
+        cursor: inherit;
+        transform: scale(1.05);
+      }
+
       
      
       
@@ -373,25 +406,35 @@ h1{
       height: 67vh;
       margin: 5rem auto 5rem 0;
       margin-right: 15rem;
-      
+
       font-family: "Quicksand", sans-serif;
       font-style: normal;
       font-optical-sizing: auto;
       color: white;
+      &:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        cursor: inherit;
+        }
       
       
      
       
-      background-color: rgba(121, 73, 15, 0.807);
+      background-color: rgba(121, 73, 15, 1);
       border: 2px solid white;
       border-radius: 20px;
       transition: all 0.5s ease-in-out;
       box-shadow: 0 0 3cap white;
+      z-index: 999;
+      opacity: 1;
+
+
       
       .name-description{
         font-size: 1rem;
         position: relative;
         align-items: center;
+       
 
         .name-and-react{
           display: flex;
@@ -424,6 +467,7 @@ h1{
             padding-bottom: 2rem;
             font-size: 2.5rem;
             font-weight: 300;
+           
            
           }
         } 
@@ -507,22 +551,7 @@ h1{
         
       }
   
-      .cafe-image{
-        display: flex;
-        background-color: transparent;
-      
-        border-radius: 20px;
-        width: 30vw;
-        height: 24vh;
-        max-width: fit-content;
-        flex-shrink: 0;
-        min-width: 30vw;
-        padding: 5px;
-        padding-right: 10px;
-        box-shadow: none;
-        margin-bottom: 10rem;
-        
-      }
+    
   
     }
    
@@ -560,35 +589,38 @@ h1{
 
     .footer-insta{
       display: flex; 
-      padding: 7px;
+      padding: 10px;
       color: inherit;
+      border-radius: 50%;
+      font-size: 1.5rem;
       &:hover{
-        background-color: rgba(249, 0, 199, 0.714);
-        border-radius: 50%;
-        transform: scale(1.1);
+        background-color: rgba(249, 0, 166, 0.479);
+        transform: translateY(-2px) scale(1.1);
         transition: all 0.3s ease-in-out;
       }
     }
 
     .footer-linkedin{
       display: flex; 
-      padding: 7px;
+      padding: 10px;
       color: inherit;
+      border-radius: 50%;
+      font-size: 1.5rem;
       &:hover{
         background-color: rgba(8, 103, 180, 0.714);
-        border-radius: 50%;
-        transform: scale(1.1);
+        transform: translateY(-2px) scale(1.1);
         transition: all 0.3s ease-in-out;
       }
     }
     .footer-mail{
       display: flex; 
-      padding: 7px;
+      padding: 10px;
       color: inherit;
+      border-radius: 50%;
+      font-size: 1.5rem;
       &:hover{
-        background-color: red;
-        border-radius: 50%;
-        transform: scale(1.1);
+        background-color: rgba(255, 0, 0, 0.595);
+        transform: translateY(-2px) scale(1.1);
         transition: all 0.3s ease-in-out;
       }
     }

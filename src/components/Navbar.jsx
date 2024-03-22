@@ -8,9 +8,12 @@ import orkunlogo from "../img/orkunlogo.png"
 
 
 
-export const Navbar = ({ scrollToProjects }) => {
+export const Navbar = (scrollToProjects) => {
+  
+
+
   return (
-    
+      
 
     <div className="navbar">
 

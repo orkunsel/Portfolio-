@@ -19,25 +19,22 @@ function App() {
     const scrollToProjects = () => {
         projectsRef.current.scrollIntoView({ behavior: 'smooth' });
     };
+    const [showParticles, setShowParticles] = useState(true);
+
+   
 
 
   return (
-    <div>
-
-    
-     <div className="home">
+    <div className="home">
         <Navbar scrollToProjects={scrollToProjects} />
-        <Mainpage/>
+        <Particles className="tsparticles" />
+        <Mainpage setShowParticles={setShowParticles} />
         <Projects ref={projectsRef} />
-        <Footer/>
-        <Particles className="tsparticles"/>
-     </div>
-     
-
-     
-    
+        
+      
+        <Footer />
     </div>
-  )
+  );
 }
 
 export default App

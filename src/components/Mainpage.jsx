@@ -3,11 +3,16 @@ import Typewriter from 'typewriter-effect';
 import  orkun  from "../img/orkun.jpeg";
 import { SlSocialInstagram } from "react-icons/sl";
 import { FaLinkedinIn } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 export const Mainpage = () => {
+
+  
+
   return (
-
-
+    
+    
+    
 
     <div className="mainpage">
 
@@ -67,6 +72,10 @@ export const Mainpage = () => {
 
           <a href="https://www.linkedin.com/in/yasin-orkun-selçuk-7a7a502ba" className="linkedin-box" target="_blank">
               <FaLinkedinIn className='linkedin-icon'/>
+          </a>
+
+          <a href="mailto:yasinoselcuk@gmail.com" className='mail-box' target="_blank">
+            <IoIosMail className='mail-icon' />
           </a>
       </div>
 

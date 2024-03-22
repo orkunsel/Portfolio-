@@ -28,8 +28,7 @@ export const Projects = React.forwardRef((props,ref) => {
             
             <h1>Projects</h1>
             <div className='projects'>
-                
-
+    
                 <div className='cafe'>
 
                     <div className='name-description'>
@@ -70,6 +69,7 @@ export const Projects = React.forwardRef((props,ref) => {
                     </div>
                     
                 </div>
+
                 <div className='earthquake'>
 
                     <div className='name-description'>
@@ -96,14 +96,9 @@ export const Projects = React.forwardRef((props,ref) => {
                             
                         </div>
                     </div> 
-
-
-
-                <div>
+                </div>
                    
-                </div>
-
-                </div>
+               
 
             </div>
 
